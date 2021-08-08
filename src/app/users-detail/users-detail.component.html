@@ -1,0 +1,77 @@
+<h3> View users Details</h3>
+<div class="card" *ngFor = "let u of user"></div>
+
+<div class="container" id="main-container">
+    <div class="row">
+      <div *ngFor="let u of user" class="col-md-6 col-xl-3">
+         <div class="card m-b-30">
+            <div class="card-body row">
+               <div class="col-6">
+                  <a href=""><img src="assets/image/img_avatar.png" alt="" class="img-fluid rounded-circle w-60"></a>
+               </div>
+               <div class="col-6 card-title align-self-center mb-0">
+                  <h5>{{u?.firstName}}</h5>
+                  <p class="m-0">{{u?.emailId}}</p>
+               </div>
+            </div>
+            <ul class="list-group list-group-flush">
+               <li class="list-group-item"><i class="fa fa-envelope float-right"></i>Address1: {{u?.address1}}</li>
+               <li class="list-group-item"><i class="fa fa-phone float-right"></i>Address2 : {{u?.address2}}</li>
+            </ul><!-- 
+            <div class="card-body">
+               <div class="float-right btn-group btn-group-sm">
+                  <a (click)="onOpenModal(employee, 'edit')" class="btn btn-primary tooltips" data-placement="top" data-original-title="Edit"><i class="fa fa-pencil"></i> </a>
+                  <a (click)="onOpenModal(employee, 'delete')" class="btn btn-secondary tooltips" data-placement="top" data-original-title="Delete"><i class="fa fa-times"></i></a>
+               </div> -->
+            </div>
+         </div>
+      </div>
+    </div>
+    
+<!-- 
+    <img src="assets/image/img_avatar.png" alt="Avatar" style="width:100%" class="img-fluid rounded-circle w-60">
+    <div class="container">
+      <h4><b>{{u?.firstName}}</b></h4>
+      <p>Architect & Engineer</p>
+    </div>
+ -->
+
+<!-- 
+<div>
+    <div>
+        <label> <b> First Name: </b></label> {{user.firstName}}
+    </div>
+    <div>
+        <label> <b> Last Name: </b></label> {{user.lastName}}
+    </div>
+    <div>
+        <label> <b> Email Id: </b></label> {{user.emailId}}
+    </div>
+    <div>
+        <label> <b> BirthDate: </b></label> {{user.birthDate}}
+    </div>
+    <div>
+        <label> <b> Address1: </b></label> {{user.address1}}
+    </div>
+    <div>
+        <label> <b> Address2: </b></label> {{user.address2}}
+    </div>
+    <div>
+        <label> <b> Zip: </b></label> {{user.zip}}
+    </div>
+    <div>
+        <label> <b> Country: </b></label> {{user.country}}
+    </div>
+    
+    <div>
+        <label> <b> Country: </b></label> {{user.country}}
+    </div>
+    
+    <div>
+        <label> <b> State: </b></label> {{user.state}}
+    </div>
+    
+    <div>
+        <label> <b> City: </b></label> {{user.city}}
+    </div>
+</div> -->
